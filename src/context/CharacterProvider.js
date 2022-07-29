@@ -13,7 +13,7 @@ export default function CharacterProvider({ children }) {
   const [abilityScoreIntelligence, setAbilityScoreIntelligence] = useState(10);
   const [abilityScoreCharisma, setAbilityScoreCharisma] = useState(10);
 
-  const characterInformation = {characterName, setCharacterName, characterLevel, setCharacterLevel, characterBackground, setCharacterBackground, abilityScoreStrength, setAbilityScoreStrength, abilityScoreDexterity, setAbilityScoreDexterity, abilityScoreConstitution, setAbilityScoreConstitution, abilityScoreWisdom, setAbilityScoreWisdom, abilityScoreIntelligence, setAbilityScoreIntelligence, abilityScoreCharisma, setAbilityScoreCharisma};
+  const characterInformation = {characterName, characterLevel, characterBackground, abilityScoreStrength, abilityScoreDexterity, abilityScoreConstitution, abilityScoreWisdom, abilityScoreIntelligence, abilityScoreCharisma};
 
   const characterSetters = {setCharacterName, setCharacterBackground, setCharacterLevel, setAbilityScoreCharisma, setAbilityScoreConstitution, setAbilityScoreDexterity, setAbilityScoreIntelligence, setAbilityScoreStrength, setAbilityScoreWisdom}
 

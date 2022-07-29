@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import CharacterForm from '../components/CharacterForm';
 import CharacterInformationTest from '../components/CharacterInformationTest';
 
 export default function CharacterSheet({characterInformation, characterSetters}) {
@@ -7,7 +8,7 @@ export default function CharacterSheet({characterInformation, characterSetters})
 
   return (
     <>
-      <div>This div will eventually display a character form!</div>
+      <CharacterForm characterInformation={characterInformation} characterSetters={characterSetters} />
       <CharacterInformationTest information={characterInformation}/>
     </>
   )
