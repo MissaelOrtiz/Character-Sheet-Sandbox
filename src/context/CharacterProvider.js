@@ -15,7 +15,9 @@ export default function CharacterProvider({ children }) {
 
   const characterInformation = {characterName, setCharacterName, characterLevel, setCharacterLevel, characterBackground, setCharacterBackground, abilityScoreStrength, setAbilityScoreStrength, abilityScoreDexterity, setAbilityScoreDexterity, abilityScoreConstitution, setAbilityScoreConstitution, abilityScoreWisdom, setAbilityScoreWisdom, abilityScoreIntelligence, setAbilityScoreIntelligence, abilityScoreCharisma, setAbilityScoreCharisma};
 
-  return <Context.Provider value={characterInformation}>
+  const characterSetters = {setCharacterName, setCharacterBackground, setCharacterLevel, setAbilityScoreCharisma, setAbilityScoreConstitution, setAbilityScoreDexterity, setAbilityScoreIntelligence, setAbilityScoreStrength, setAbilityScoreWisdom}
+
+  return <Context.Provider value={{characterInformation, characterSetters}}>
     {children}
   </Context.Provider>;
 };
