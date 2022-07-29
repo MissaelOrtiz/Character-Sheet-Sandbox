@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import CharacterInformationTest from '../components/CharacterInformationTest';
 
 export default function CharacterSheet() {
   const [characterName, setCharacterName] = useState('');
@@ -15,8 +16,8 @@ export default function CharacterSheet() {
 
   return (
     <>
-      <div>Welcome to this test sheet!</div>
-      Information Fields needed:
+      <div>This div will eventually display a character form!</div>
+      <CharacterInformationTest information={{characterName, characterBackground, characterLevel, abilityScoreCharisma, abilityScoreConstitution, abilityScoreDexterity, abilityScoreIntelligence, abilityScoreStrength, abilityScoreWisdom}}/>
     </>
   )
 }
